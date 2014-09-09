@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ajax Form</title>
+<title>Set Cookies</title>
 </head>
 <body>
-<form action="confirm.php" method="POST">
+<form action="set-cookies.php" method="POST">
 First name: <input type="text" name="firstname"></br>
 Last name: <input type="text" name="lastname">
 <input type="submit" value="Submit">
