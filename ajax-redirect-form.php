@@ -5,7 +5,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
-    $('#ajax-form').on('submit', function(e) {
+    $('#ajax-redirect-form').on('submit', function(e) {
         var vals = {
         first : $('#firstname').val().trim(),
         last : $('#lastname').val().trim(),
@@ -16,8 +16,8 @@ $(document).ready(function() {
            url: 'set-cookies.php',
            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
            data: JSON.stringify(vals),
-           dataType: 'json',
            processData: true,
+           dataType: 'json',
            type: 'POST',
        });
        e.preventDefault();
@@ -27,8 +27,8 @@ $(document).ready(function() {
 </head>
 <body>
 <p><a href="index.php">Home</a></p>
-<h1>Ajax Form</h1>
-<form id="ajax-form">
+<h1>Ajax Redirect Form</h1>
+<form id="ajax-redirect-form">
 First name: <input type="text" name="firstname"></br>
 Last name: <input type="text" name="lastname">
 <input type="submit" value="Submit">

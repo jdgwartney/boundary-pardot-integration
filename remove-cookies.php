@@ -7,6 +7,7 @@ setcookie("user", "", time()-3600);
 <title>Remove Cookies</title>
 </head>
 <body>
+<p><a href="index.php">Home</a></p>
 <p>Remove the following Cookies:</p>
 <p>
 <?php print_r($_COOKIE); ?>
