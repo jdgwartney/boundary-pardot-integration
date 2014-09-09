@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Ajax Form</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
@@ -21,8 +21,8 @@ $(document).ready(function() {
            type: 'POST',
        });
        e.preventDefault();
-    }
-}
+    });
+});
 </script>
 </head>
 <body>
