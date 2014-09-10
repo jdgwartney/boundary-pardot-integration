@@ -1,7 +1,7 @@
 <?php
 $expire=time()+60*60*24*30;
 $fullname = $_POST['firstname'] . " " . $_POST['lastname'];
-setcookie("user","foo bar",$expire);
+setcookie("user",$fullname,$expire);
 ?>
 <!DOCTYPE html>
 <html>
