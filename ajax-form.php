@@ -21,12 +21,13 @@ $(document).ready(function() {
            data: vals,
            processData: true,
            type: 'POST',
-           async: false
+           complete: function() {
+             console.log(response);
+             console.log(response.getAllResponseHeaders());
+           }
        });
        <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();
-       console.log(response);
-       console.log(response.getAllResponseHeaders());
     });
 });
 </script>
