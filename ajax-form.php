@@ -7,7 +7,7 @@
 $(document).ready(function() {
     console.log("ready...");
     $('#ajax-form').on('submit', function(e) {
-        console.('jQuery submit');
+        console.log('jQuery submit');
         var vals = {
         first : $.trim($('#firstname').val()),
         last : $.trim($('#lastname').val()),
@@ -22,8 +22,10 @@ $(document).ready(function() {
            processData: true,
            type: 'POST',
        });
+       <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();
        console.log(response);
+       console.log(response.getAllResponseHeaders());
     });
 });
 </script>

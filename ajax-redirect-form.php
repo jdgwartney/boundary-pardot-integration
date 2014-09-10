@@ -21,8 +21,10 @@ $(document).ready(function() {
            dataType: 'json',
            type: 'POST',
        });
+       <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();
        console.log(response);
+       console.log(response.getAllResponseHeaders());
     });
 });
 </script>
