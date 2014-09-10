@@ -12,8 +12,8 @@ $(document).ready(function() {
         firstname : $.trim($('#firstname').val()),
         lastname : $.trim($('#lastname').val()),
         };
-       console.log("first: " + vals.first);
-       console.log("last: " + vals.last);
+       console.log("first: " + vals.firstname);
+       console.log("last: " + vals.lastname);
 
        var response = $.ajax({
            url: 'set-cookies.php',

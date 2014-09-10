@@ -6,11 +6,14 @@
 <script>
 $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
-        console.log('jQuery submit');
-        var vals = {
-        firstname : $.trim($('#firstname').val()),
-        lastname : $.trim($('#lastname').val()),
-        };
+       console.log('jQuery submit');
+       var vals = {
+       firstname : $.trim($('#firstname').val()),
+       lastname : $.trim($('#lastname').val()),
+       };
+       console.log("first: " + vals.firstname);
+       console.log("last: " + vals.lastname);
+
 
        var response = $.ajax(
        {
