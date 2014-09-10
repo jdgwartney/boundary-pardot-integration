@@ -9,8 +9,8 @@ $(document).ready(function() {
     $('#ajax-form').on('submit', function(e) {
         console.log('jQuery submit');
         var vals = {
-        first : $.trim($('#firstname').val()),
-        last : $.trim($('#lastname').val()),
+        firstname : $.trim($('#firstname').val()),
+        lastname : $.trim($('#lastname').val()),
         };
        console.log("first: " + vals.first);
        console.log("last: " + vals.last);

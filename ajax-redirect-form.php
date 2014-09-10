@@ -8,8 +8,8 @@ $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
         console.log('jQuery submit');
         var vals = {
-        first : $.trim($('#firstname').val()),
-        last : $.trim($('#lastname').val()),
+        firstname : $.trim($('#firstname').val()),
+        lastname : $.trim($('#lastname').val()),
         };
 
        var response = $.ajax(
