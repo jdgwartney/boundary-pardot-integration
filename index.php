@@ -11,10 +11,12 @@
 <li><a href="view-cookies.php">View Cookies</a></li>
 <li><a href="redirect-cookies.php">Redirect Cookies</a></li>
 <li><a href="remove-cookies.php">Remove Cookies</a></li>
+<li><a href="jquery-cookies-form.php">Set Cookies JavaScript</a></li>
 </ul>
 <h1>Pardot Links</h1>
 <ul>
-<li><a href="paradot-form.php">Form</a></li>
+<li><a href="paradot-form.php">Paradot Form</a></li>
+<li><a href="paradot-ajax-form.php">Paradot Ajax Form</a></li>
 </ul>
 </body>
 </html>

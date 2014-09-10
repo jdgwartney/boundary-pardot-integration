@@ -17,7 +17,7 @@ $(document).ready(function() {
 
        var response = $.ajax(
        {
-           url: 'set-cookies.php',
+           url: 'redirect-cookies.php',
            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
            data: JSON.stringify(vals),
            processData: true,
