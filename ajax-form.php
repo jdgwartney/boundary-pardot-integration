@@ -9,11 +9,11 @@ $(document).ready(function() {
     $('#ajax-form').on('submit', function(e) {
         console.log('jQuery submit');
         var vals = {
-        firstname : $.trim($('#firstname').val()),
-        lastname : $.trim($('#lastname').val()),
+        first_name : $.trim($('#first_name').val()),
+        last_name : $.trim($('#last_name').val()),
         };
-       console.log("first: " + vals.firstname);
-       console.log("last: " + vals.lastname);
+       console.log("first: " + vals.first_name);
+       console.log("last: " + vals.last_name);
 
        var response = $.ajax({
            url: 'set-cookies.php',
@@ -36,8 +36,8 @@ $(document).ready(function() {
 <p><a href="index.php">Home</a></p>
 <h1>Ajax Form</h1>
 <form id="ajax-form">
-First name: <input id="firstname" type="text" name="firstname"></br>
-Last name: <input id="lastname" type="text" name="lastname">
+First name: <input id="first_name" type="text" name="first_name"></br>
+Last name: <input id="last_name" type="text" name="last_name">
 <button id="submit" type="submit">
 </form>
 </body>

@@ -8,11 +8,11 @@ $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
        console.log('jQuery submit');
        var vals = {
-       firstname : $.trim($('#firstname').val()),
-       lastname : $.trim($('#lastname').val()),
+       firstname : $.trim($('#first_name').val()),
+       lastname : $.trim($('#last_name').val()),
        };
-       console.log("first: " + vals.firstname);
-       console.log("last: " + vals.lastname);
+       console.log("first_name: " + vals.first_name);
+       console.log("last_name: " + vals.last_name);
 
 
        var response = $.ajax(
@@ -36,8 +36,8 @@ $(document).ready(function() {
 <p><a href="index.php">Home</a></p>
 <h1>Ajax Redirect Form</h1>
 <form id="ajax-redirect-form">
-First name: <input id="firstname" type="text" name="firstname" required></br>
-Last name: <input id="lastname" type="text" name="lastname" required>
+First name: <input id="first_name" type="text" name="first_name" required></br>
+Last name: <input id="last_name" type="text" name="last_name" required>
 <button type="submit" value="Submit">
 </form>
 </body>

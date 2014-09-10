@@ -1,6 +1,6 @@
 <?php
 $expire=time()+60*60*24*30;
-$fullname = $_POST['firstname'] . " " . $_POST['lastname'];
+$fullname = $_POST['first_name'] . " " . $_POST['last_name'];
 setcookie("user",$fullname,$expire);
 ?>
 <!DOCTYPE html>

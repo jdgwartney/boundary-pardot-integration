@@ -9,10 +9,10 @@ $(document).ready(function() {
     $('#ajax-form').on('submit', function(e) {
         console.log('jQuery submit');
         var vals = {
-        firstname : $.trim($('#firstname').val()),
-        lastname : $.trim($('#lastname').val()),
+        first_name : $.trim($('#first_name').val()),
+        last_name : $.trim($('#last_name').val()),
         };
-       document.cookie="firstname=" + $.trim($('#firstname').val());
+       document.cookie="first_name=" + $.trim($('#first_name').val());
        e.preventDefault();
     });
 });
@@ -23,8 +23,8 @@ $(document).ready(function() {
 <h1>Set Cookies Via Javascript Form</h1>
 <p>Click on submit button to have cookies set by javascript</p>
 <form id="ajax-form">
-First name: <input id="firstname" type="text" name="firstname"></br>
-Last name: <input id="lastname" type="text" name="lastname">
+First name: <input id="first_name" type="text" name="first_name"></br>
+Last name: <input id="last_name" type="text" name="last_name">
 <button id="submit" type="submit">
 </form>
 </body>
