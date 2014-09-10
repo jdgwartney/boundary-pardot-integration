@@ -21,6 +21,7 @@ $(document).ready(function() {
            data: vals,
            processData: true,
            type: 'POST',
+           async: false
        });
        <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();

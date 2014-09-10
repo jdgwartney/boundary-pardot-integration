@@ -23,6 +23,10 @@ $(document).ready(function() {
            dataType: 'jsonp',
            processData: true,
            type: 'POST',
+           complete: function() {
+              console.log(response);
+              console.log(response.getAllResponseHeaders());
+           },
            statusCode: {
              200: function() { console.log('HTTP STATUS CODE 200')},
              302: function() { console.log('HTTP STATUS CODE 302')},
@@ -31,8 +35,6 @@ $(document).ready(function() {
        });
        <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();
-       console.log(response);
-       console.log(response.getAllResponseHeaders());
     });
 });
 </script>
