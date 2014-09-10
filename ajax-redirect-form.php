@@ -7,8 +7,8 @@
 $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
         var vals = {
-        first : $('#firstname').val().trim(),
-        last : $('#lastname').val().trim(),
+        first : $.trim($('#firstname').val()),
+        last : $.trim($('#lastname').val()),
         };
 
        var response = $.ajax(
@@ -29,9 +29,9 @@ $(document).ready(function() {
 <p><a href="index.php">Home</a></p>
 <h1>Ajax Redirect Form</h1>
 <form id="ajax-redirect-form">
-First name: <input type="text" name="firstname"></br>
-Last name: <input type="text" name="lastname">
-<input type="submit" value="Submit">
+First name: <input id="firstname" type="text" name="firstname"></br>
+Last name: <input id="lastname" type="text" name="lastname">
+<button type="submit" value="Submit">
 </form>
 </body>
 </html>
