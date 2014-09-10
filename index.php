@@ -2,7 +2,7 @@
 <html>
 <head><title>Pardot Debug</title></head>
 <body>
-<h1>Links</h1>
+<h1>Example Links</h1>
 <ul>
 <li><a href="form.php">Form</a></li>
 <li><a href="ajax-form.php">Ajax Form</a></li>
@@ -11,6 +11,10 @@
 <li><a href="view-cookies.php">View Cookies</a></li>
 <li><a href="redirect-cookies.php">Redirect Cookies</a></li>
 <li><a href="remove-cookies.php">Remove Cookies</a></li>
+</ul>
+<h1>Pardot Links</h1>
+<ul>
+<li><a href="paradot-form.php">Form</a></li>
 </ul>
 </body>
 </html>
