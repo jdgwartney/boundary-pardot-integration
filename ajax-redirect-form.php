@@ -8,8 +8,8 @@ $(document).ready(function() {
     $('#ajax-redirect-form').on('submit', function(e) {
        console.log('jQuery submit');
        var vals = {
-       firstname : $.trim($('#first_name').val()),
-       lastname : $.trim($('#last_name').val()),
+       first_name : $.trim($('#first_name').val()),
+       last_name : $.trim($('#last_name').val()),
        };
        console.log("first_name: " + vals.first_name);
        console.log("last_name: " + vals.last_name);
@@ -19,15 +19,16 @@ $(document).ready(function() {
        {
            url: 'redirect-cookies.php',
            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-           data: JSON.stringify(vals),
+           data: vals,
            processData: true,
-           dataType: 'json',
            type: 'POST',
+           complete: function() {
+             console.log(response);
+             console.log(response.getAllResponseHeaders());
+           }
        });
        <!-- make the call to prevent from the default action of the form element being called -->
        e.preventDefault();
-       console.log(response);
-       console.log(response.getAllResponseHeaders());
     });
 });
 </script>

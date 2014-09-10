@@ -9,12 +9,12 @@ $(document).ready(function() {
     $('#paradot-ajax-form').on('submit', function(e) {
         console.log('jQuery submit');
         var vals = {
-        firstname : $.trim($('#first_name').val()),
-        lastname : $.trim($('#last_name').val()),
+        first_name : $.trim($('#first_name').val()),
+        last_name : $.trim($('#last_name').val()),
         email : $.trim($('#email').val()),
         };
-       console.log("first: " + vals.firstname);
-       console.log("last: " + vals.lastname);
+       console.log("first: " + vals.first_name);
+       console.log("last: " + vals.last_name);
 
        var response = $.ajax({
            url: 'http://go.boundary.com/l/20252/2014-09-08/2l1821',
