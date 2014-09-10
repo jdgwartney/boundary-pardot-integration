@@ -7,9 +7,10 @@
 $(document).ready(function() {
     console.log("ready...");
     $('#ajax-form').on('submit', function(e) {
+        console.('jQuery submit');
         var vals = {
-        first : $('#firstname').val().trim(),
-        last : $('#lastname').val().trim(),
+        first : $.trim($('#firstname').val()),
+        last : $.trim($('#lastname').val()),
         };
        console.log("first: " + vals.first);
        console.log("last: " + vals.last);
@@ -21,6 +22,8 @@ $(document).ready(function() {
            processData: true,
            type: 'POST',
        });
+       e.preventDefault();
+       console.log(response);
     });
 });
 </script>
