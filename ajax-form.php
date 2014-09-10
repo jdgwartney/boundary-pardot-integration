@@ -8,8 +8,8 @@ $(document).ready(function() {
     console.log("ready...");
     $('#ajax-form').on('submit', function(e) {
         var vals = {
-        first : $('#firstname').val(),
-        last : $('#lastname').val(),
+        first : $('#firstname').val().trim(),
+        last : $('#lastname').val().trim(),
         };
        console.log("first: " + vals.first);
        console.log("last: " + vals.last);
@@ -21,9 +21,6 @@ $(document).ready(function() {
            processData: true,
            type: 'POST',
        });
-       //console.log(response);
-       //e.preventDefault();
-       //$('body').append("<p>Ajax call made</p>");
     });
 });
 </script>
