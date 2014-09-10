@@ -1,4 +1,3 @@
-<!-- Set the header to redirect(302) to our page that sets cookies -->
 <?php header("location: set-cookies.php") ?>
 <!DOCTYPE html>
 <html>
