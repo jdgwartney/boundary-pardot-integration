@@ -1,4 +1,3 @@
-<!-- Set a cookie from the values POST'd to this page with an expiry of 30 days -->
 <?php
 $expire=time()+60*60*24*30;
 $value = $_POST['firstname'] . " " . $_POST['lastname'];

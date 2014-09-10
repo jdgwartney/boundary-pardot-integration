@@ -1,4 +1,3 @@
-<!-- Set the expiry date in the past to remove our cookie -->
 <?php
 setcookie("user", "", time()-3600);
 ?>
