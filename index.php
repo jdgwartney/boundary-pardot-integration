@@ -18,5 +18,10 @@
 <li><a href="paradot-form.php">Paradot Form</a></li>
 <li><a href="paradot-ajax-form.php">Paradot Ajax Form</a></li>
 </ul>
+
+<h1>HTTP 4XX Codes</h1>
+<ul>
+<li><a href="http-code-400.php">HTTP 400</a></ul>
+</ul>
 </body>
 </html>

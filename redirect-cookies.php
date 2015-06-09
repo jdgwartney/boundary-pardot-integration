@@ -1,4 +1,7 @@
-<?php header("location: set-cookies.php") ?>
+<?php
+$url=sprintf("location: get-cookies.php?first_name=%s&last_name=%s",$_POST["first_name"],$_POST["last_name"]);
+header($url);
+?>
 <!DOCTYPE html>
 <html>
 <head>

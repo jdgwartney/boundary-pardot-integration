@@ -20,7 +20,8 @@ $(document).ready(function() {
            url: 'http://go.boundary.com/l/20252/2014-09-08/2l1821',
            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
            data: vals,
-           dataType: 'jsonp',
+           crossDomain: true,
+           dataType: 'json',
            processData: true,
            type: 'POST',
            complete: function() {
